@@ -1,0 +1,691 @@
+/opt/local/include/BRepAlgo_AsDes.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/BRepAlgo_AsDes.hxx:  Standard_EXPORT   Standard_Boolean HasAscendant (const TopoDS_Shape& S)  const;
+/opt/local/include/BRepAlgo_AsDes.hxx:  Standard_EXPORT   Standard_Boolean HasDescendant (const TopoDS_Shape& S)  const;
+/opt/local/include/BRepAlgo_AsDes.hxx:  Standard_EXPORT   Standard_Boolean HasCommonDescendant (const TopoDS_Shape& S1, const TopoDS_Shape& S2, TopTools_ListOfShape& LC)  const;
+/opt/local/include/BRepAlgo_AsDes.hxx:  Standard_EXPORT   void BackReplace (const TopoDS_Shape& OldS, const TopoDS_Shape& NewS, const TopTools_ListOfShape& L, const Standard_Boolean InUp) ;
+/opt/local/include/Handle_Standard_Transient.hxx:  Standard_Boolean IsNull() const
+/opt/local/include/Handle_Standard_Transient.hxx:inline Standard_Boolean IsEqual (const Handle(Standard_Transient)& theFirst,
+/opt/local/include/Partition_Inter2d.cxx:static Standard_Boolean TestEdges = 0;
+/opt/local/include/Partition_Inter2d.cxx:static Standard_Boolean findVOnE(const TopoDS_Vertex &         theV,
+/opt/local/include/Partition_Inter2d.cxx:    Standard_Boolean isOk = Standard_False;
+/opt/local/include/Partition_Inter2d.cxx:  Standard_Boolean                   OnE1,OnE2;
+/opt/local/include/Partition_Inter2d.cxx:                                               Standard_Boolean&   isFirst,
+/opt/local/include/Partition_Inter2d.cxx:  Standard_Boolean isFirst=0;
+/opt/local/include/Partition_Inter2d.cxx:                           const Standard_Boolean        WithOri)
+/opt/local/include/Partition_Inter2d.cxx:  Standard_Boolean intersect = Standard_True;
+/opt/local/include/Partition_Inter2d.cxx:    Standard_Boolean reducesegments = Standard_False;
+/opt/local/include/Partition_Inter2d.cxx:    Standard_Boolean rejectreducedsegmentpoints = Standard_False;
+/opt/local/include/Partition_Inter2d.cxx:  Standard_Boolean AffichPurge = Standard_False;
+/opt/local/include/Partition_Inter2d.cxx:  Standard_Boolean Purge = Standard_True;
+/opt/local/include/Partition_Inter2d.hxx:#ifndef _Standard_Boolean_HeaderFile
+/opt/local/include/Partition_Inter2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Partition_Inter2d.hxx:   static  TopoDS_Vertex FindEndVertex(const TopTools_ListOfShape& VertList,const Standard_Real f,const Standard_Real l,const TopoDS_Edge& E,Standard_Boolean& First,Standard_Real& DU) ;
+/opt/local/include/Partition_Inter3d.cxx:    Standard_Boolean added = Standard_False;
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean Partition_Inter3d::IsDone(const TopoDS_Face& F1, 
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean Partition_Inter3d::HasSameDomainF(const TopoDS_Shape& F) const
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean Partition_Inter3d::IsSameDomainF(const TopoDS_Shape& F1,
+/opt/local/include/Partition_Inter3d.cxx:    Standard_Boolean isClosed = V1.IsSame( V2 ) && V.IsSame(V1);
+/opt/local/include/Partition_Inter3d.cxx:      Standard_Boolean isFirst = IsEqual( BRep_Tool::Parameter(V,E), f );
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean
+/opt/local/include/Partition_Inter3d.cxx:Standard_Boolean
+/opt/local/include/Partition_Inter3d.hxx:#ifndef _Standard_Boolean_HeaderFile
+/opt/local/include/Partition_Inter3d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean IsDone(const TopoDS_Face& F1,const TopoDS_Face& F2) const;
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean HasSameDomainF(const TopoDS_Shape& F) const;
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean IsSameDomainF(const TopoDS_Shape& F1,const TopoDS_Shape& F2) const;
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean IsSectionEdge(const TopoDS_Edge& E) const;
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean HasSectionEdge(const TopoDS_Face& F) const;
+/opt/local/include/Partition_Inter3d.hxx:   Standard_Boolean IsSplitOn(const TopoDS_Edge& NewE,const TopoDS_Edge& OldE,const TopoDS_Face& F) const;
+/opt/local/include/Partition_Loop.cxx:static Standard_Boolean  SelectEdge(const TopoDS_Face&    F,
+/opt/local/include/Partition_Loop.cxx:static Standard_Boolean  SamePnt2d(TopoDS_Vertex  V,
+/opt/local/include/Partition_Loop.cxx:    Standard_Boolean End= Standard_False;
+/opt/local/include/Partition_Loop.cxx:	Standard_Boolean find = SelectEdge(myFace,CE,CV,NE,MVE(CV));
+/opt/local/include/Partition_Loop2d.cxx:                               const Standard_Boolean      theFirstEnd)
+/opt/local/include/Partition_Loop2d.cxx:  Standard_Boolean isForward = ( theE.Orientation () == TopAbs_FORWARD );
+/opt/local/include/Partition_Loop2d.cxx:static Standard_Boolean  SelectEdge(const BRepAdaptor_Surface& Surf,
+/opt/local/include/Partition_Loop2d.cxx:    Standard_Boolean isForward = ( CE.Orientation () == TopAbs_FORWARD );
+/opt/local/include/Partition_Loop2d.cxx:      Standard_Boolean isClose = ( Abs( angle - anglemin ) <= tolAng );
+/opt/local/include/Partition_Loop2d.cxx:static Standard_Boolean  SamePnt2d(const TopoDS_Vertex& V1,
+/opt/local/include/Partition_Loop2d.cxx:// static Standard_Boolean canPassToOld (const TopoDS_Shape& V,
+/opt/local/include/Partition_Loop2d.cxx:  Standard_Boolean isReversed = ( DE.Orientation() == TopAbs_REVERSED );
+/opt/local/include/Partition_Loop2d.cxx:  Standard_Boolean doIntersect =  ( EdgesList.Extent() > 2 );
+/opt/local/include/Partition_Loop2d.cxx:      Standard_Boolean first = Standard_True;
+/opt/local/include/Partition_Loop2d.cxx:  Standard_Boolean isInternCW = 0;
+/opt/local/include/Partition_Loop2d.cxx:    Standard_Boolean End = Standard_False;
+/opt/local/include/Partition_Loop2d.cxx:            Standard_Boolean add = Standard_False;
+/opt/local/include/Partition_Loop2d.cxx:static Standard_Boolean isHole (const TopoDS_Wire& W,
+/opt/local/include/Partition_Loop2d.cxx:static Standard_Boolean isInside(const TopoDS_Face& F,
+/opt/local/include/Partition_Loop2d.cxx:  Standard_Boolean hasOldHoles = Standard_False;
+/opt/local/include/Partition_Loop2d.cxx:      Standard_Boolean clearOuterInner =  ( prevHolesL.Extent() < EqWM.Extent() );
+/opt/local/include/Partition_Loop3d.cxx:          Standard_Boolean found = Standard_False;
+/opt/local/include/Partition_Loop3d.cxx:          Standard_Boolean GoodOri, inside;
+/opt/local/include/Partition_Loop3d.cxx:Standard_Boolean Partition_Loop3d::IsInside(const TopoDS_Edge& E,
+/opt/local/include/Partition_Loop3d.cxx:					    const Standard_Boolean CountDot,
+/opt/local/include/Partition_Loop3d.cxx:					    Standard_Boolean& GoodOri) 
+/opt/local/include/Partition_Loop3d.cxx:  Standard_Boolean tangent = sin < 0.001;
+/opt/local/include/Partition_Loop3d.cxx:  Standard_Boolean inside = 0;
+/opt/local/include/Partition_Loop3d.hxx:#ifndef _Standard_Boolean_HeaderFile
+/opt/local/include/Partition_Loop3d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Partition_Loop3d.hxx:   static  Standard_Boolean IsInside(const TopoDS_Edge& E,const TopoDS_Face& F1,const TopoDS_Face& F2,const Standard_Boolean CountDot,Standard_Real& Dot,Standard_Boolean& GoodOri) ;
+/opt/local/include/Partition_Spliter.cxx:static Standard_Boolean isClosed(const TopoDS_Shape& theShape)
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isClosed = (theShape.ShapeType() == TopAbs_SOLID);
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean isTool1 = ! myMapFaces.Contains( aListF.First() );
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean isTool2 = ! myMapFaces.Contains( aListF.Last() );
+/opt/local/include/Partition_Spliter.cxx:        Standard_Boolean AddV1 = Standard_True;
+/opt/local/include/Partition_Spliter.cxx:        Standard_Boolean AddV2 = Standard_True;
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean makeSolids = (Limit == TopAbs_SHAPE ||
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isWrapping = myWrappingSolid.Contains( theSolid );
+/opt/local/include/Partition_Spliter.cxx:						const Standard_Boolean CheckClosed,
+/opt/local/include/Partition_Spliter.cxx:						const Standard_Boolean All)
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean skipAlreadyAdded = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean GoodOri, inside;
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean isSectionE = myInter3d.IsSectionEdge ( OrigE );
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean sameDom1 = anOrigFace.IsSame( origF1 );
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean sameDom2 = anOrigFace.IsSame( origF2 );
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isSolid = (theShape.ShapeType() == TopAbs_SOLID);
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean isAllOut = Standard_True;
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean isClosed = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:		       const Standard_Boolean addSame,
+/opt/local/include/Partition_Spliter.cxx:	Standard_Boolean ok = Standard_True, hasMin = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean needRebuild = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:	Standard_Boolean isSectionE = myInter3d.IsSectionEdge(E);
+/opt/local/include/Partition_Spliter.cxx:	Standard_Boolean isNewE = !EM.Contains( E );
+/opt/local/include/Partition_Spliter.cxx:	  Standard_Boolean isSameE = NE.IsSame ( E );
+/opt/local/include/Partition_Spliter.cxx:              Standard_Boolean GoodOri;
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean Invert   = Standard_True;
+/opt/local/include/Partition_Spliter.cxx:      Standard_Boolean isFirst=0;
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean flag = BRep_Tool::SameParameter(NEdge);
+/opt/local/include/Partition_Spliter.cxx:        Standard_Boolean isUPeriod =
+/opt/local/include/Partition_Spliter.cxx:        Standard_Boolean is1Equal;
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isTool = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isTool = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean isClosed = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:Standard_Boolean Partition_Spliter::CheckTool(const TopoDS_Shape& S)
+/opt/local/include/Partition_Spliter.cxx:  Standard_Boolean isTool = Standard_False;
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean hasSectionE = myInter3d.HasSectionEdge( F );
+/opt/local/include/Partition_Spliter.cxx:    Standard_Boolean hasNewE     = myAsDes->HasDescendant( F );
+/opt/local/include/Partition_Spliter.cxx:Standard_Boolean Partition_Spliter::IsInside (const TopoDS_Shape& theS1,
+/opt/local/include/Partition_Spliter.cxx:          Standard_Boolean isTool = myMapTools.Contains( F );
+/opt/local/include/Partition_Spliter.cxx:          Standard_Boolean isInside = IsInside( aToolShape, aSolid );
+/opt/local/include/Partition_Spliter.hxx:#ifndef _Standard_Boolean_HeaderFile
+/opt/local/include/Partition_Spliter.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Partition_Spliter.hxx:   TopoDS_Shape FindFacesInside(const TopoDS_Shape& S,const Standard_Boolean CheckClosed = Standard_False,const Standard_Boolean All = Standard_False) ;
+/opt/local/include/Partition_Spliter.hxx:   Standard_Boolean CheckTool(const TopoDS_Shape& S) ;
+/opt/local/include/Partition_Spliter.hxx:   static  Standard_Boolean IsInside(const TopoDS_Shape& S1,const TopoDS_Shape& S2) ;
+/opt/local/include/Standard_Address.hxx:inline Standard_Boolean IsSimilar(const Standard_Address One
+/opt/local/include/Standard_Address.hxx:inline Standard_Boolean IsEqual(const Standard_Address One
+/opt/local/include/Standard_AncestorIterator.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_AncestorIterator.hxx:  Standard_EXPORT   Standard_Boolean More()  const;
+/opt/local/include/Standard_Assert.hxx:    inline Standard_Boolean Standard_ASSERT_REPORT_ (const char* theFile,
+/opt/local/include/Standard_Assert.hxx:    inline Standard_Boolean Standard_ASSERT_REPORT_ (const char* theFile,
+/opt/local/include/Standard_Boolean.hxx:#ifndef _Standard_Boolean_HeaderFile
+/opt/local/include/Standard_Boolean.hxx:#define _Standard_Boolean_HeaderFile
+/opt/local/include/Standard_Boolean.hxx://typedef unsigned integer  Standard_Boolean;
+/opt/local/include/Standard_CString.hxx:inline Standard_Boolean IsSimilar(const Standard_CString One
+/opt/local/include/Standard_CString.hxx:inline Standard_Boolean IsSimilar(const Standard_CString One
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsEqual(const Standard_Character One,
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsSimilar(const Standard_Character One, 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsAlphabetic(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsDigit(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsXDigit(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsAlphanumeric(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsControl(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsGraphic(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsLowerCase(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsPrintable(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsPunctuation(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsSpace(const Standard_Character me) 
+/opt/local/include/Standard_Character.hxx:inline Standard_Boolean IsUpperCase(const Standard_Character me) 
+/opt/local/include/Standard_ErrorHandler.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_ErrorHandler.hxx:  Standard_EXPORT   Standard_Boolean Catches (const Handle(Standard_Type)& aType) ;
+/opt/local/include/Standard_ErrorHandler.hxx:  Standard_EXPORT static   Standard_Boolean IsInTryBlock() ;
+/opt/local/include/Standard_ErrorHandler.hxx:  Standard_EXPORT static   Standard_PErrorHandler FindHandler (const Standard_HandlerStatus theStatus, const Standard_Boolean theUnlink) ;
+/opt/local/include/Standard_ExtCharacter.hxx:inline Standard_Boolean IsAnAscii(const Standard_ExtCharacter achar)
+/opt/local/include/Standard_ExtCharacter.hxx:inline Standard_Boolean IsEqual(const Standard_ExtCharacter One,
+/opt/local/include/Standard_ExtCharacter.hxx:inline Standard_Boolean IsSimilar(const Standard_ExtCharacter One, 
+/opt/local/include/Standard_GUID.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_GUID.hxx:  Standard_EXPORT   Standard_Boolean IsSame (const Standard_GUID& uid)  const;
+/opt/local/include/Standard_GUID.hxx:  Standard_Boolean operator == (const Standard_GUID& uid)  const
+/opt/local/include/Standard_GUID.hxx:  Standard_EXPORT   Standard_Boolean IsNotSame (const Standard_GUID& uid)  const;
+/opt/local/include/Standard_GUID.hxx:  Standard_Boolean operator != (const Standard_GUID& uid)  const
+/opt/local/include/Standard_GUID.hxx:  Standard_EXPORT static   Standard_Boolean CheckGUIDFormat (const Standard_CString aGuid) ;
+/opt/local/include/Standard_GUID.hxx:  Standard_EXPORT static   Standard_Boolean IsEqual (const Standard_GUID& string1, const Standard_GUID& string2) ;
+/opt/local/include/Standard_Integer.hxx:inline Standard_Boolean IsEqual (const Standard_Integer theOne,
+/opt/local/include/Standard_Integer.hxx:inline Standard_Boolean IsEqual (const Standard_Utf32Char theOne,
+/opt/local/include/Standard_Integer.hxx:inline Standard_Boolean IsSimilar (const Standard_Integer One, 
+/opt/local/include/Standard_Integer.hxx:inline Standard_Boolean IsEven (const Standard_Integer Value) 
+/opt/local/include/Standard_Integer.hxx:inline Standard_Boolean IsOdd (const Standard_Integer Value) 
+/opt/local/include/Standard_MMgrOpt.hxx:                        (const Standard_Boolean aClear      = Standard_True,
+/opt/local/include/Standard_MMgrOpt.hxx:                         const Standard_Boolean aMMap       = Standard_True,
+/opt/local/include/Standard_MMgrOpt.hxx:  Standard_EXPORT virtual Standard_Integer Purge(Standard_Boolean isDestroyed);
+/opt/local/include/Standard_MMgrOpt.hxx:  typedef void (*TPCallBackFunc)(const Standard_Boolean theIsAlloc,
+/opt/local/include/Standard_MMgrOpt.hxx:  Standard_Boolean myClear;         //!< option to clear allocated memory
+/opt/local/include/Standard_MMgrRaw.hxx:  Standard_EXPORT Standard_MMgrRaw(const Standard_Boolean aClear=Standard_False);
+/opt/local/include/Standard_MMgrRaw.hxx:  Standard_Boolean myClear; //! Option to nullify allocated memory
+/opt/local/include/Standard_MMgrRoot.hxx:  Standard_EXPORT virtual Standard_Integer Purge(Standard_Boolean isDestroyed=Standard_False);
+/opt/local/include/Standard_MMgrTBBalloc.hxx:  Standard_EXPORT Standard_MMgrTBBalloc(const Standard_Boolean aClear=Standard_False);
+/opt/local/include/Standard_MMgrTBBalloc.hxx:  Standard_Boolean myClear; //! Option to nullify allocated memory
+/opt/local/include/Standard_Mutex.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_Mutex.hxx:  Standard_EXPORT Standard_Boolean TryLock ();
+/opt/local/include/Standard_Persistent.hxx:  Standard_EXPORT         Standard_Boolean            IsKind(const Handle_Standard_Type&)const;
+/opt/local/include/Standard_Persistent.hxx:  Standard_EXPORT         Standard_Boolean            IsInstance(const Handle_Standard_Type&)const;  
+/opt/local/include/Standard_Persistent_proto.hxx:  Standard_EXPORT         Standard_Boolean            IsKind(const Handle_Standard_Type&)const;
+/opt/local/include/Standard_Persistent_proto.hxx:  Standard_EXPORT         Standard_Boolean            IsInstance(const Handle_Standard_Type&)const;  
+/opt/local/include/Standard_PrimitiveTypes.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_Real.hxx:inline Standard_Boolean  IsEqual (const Standard_Real Value1, 
+/opt/local/include/Standard_Real.hxx:inline Standard_Boolean  IsSimilar(const Standard_Real One, 
+/opt/local/include/Standard_ShortReal.hxx:inline Standard_Boolean  IsEqual (const Standard_ShortReal Value1, 
+/opt/local/include/Standard_ShortReal.hxx:inline Standard_Boolean  IsSimilar(const Standard_ShortReal One, 
+/opt/local/include/Standard_Size.hxx:inline Standard_Boolean IsEqual(const Standard_Size One,
+/opt/local/include/Standard_Storable.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_Storable.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const Standard_Storable& Other)  const;
+/opt/local/include/Standard_Storable.hxx:  Standard_Boolean operator == (const Standard_Storable& Other)  const
+/opt/local/include/Standard_Storable.hxx:  Standard_EXPORT   Standard_Boolean IsSimilar (const Standard_Storable& Other)  const;
+/opt/local/include/Standard_Storable.hxx:inline Standard_Boolean IsSimilar(const Standard_Storable& me,const Standard_Storable& Other) {
+/opt/local/include/Standard_Time.hxx:inline Standard_Boolean IsEqual (const Standard_Time theOne,
+/opt/local/include/Standard_Transient_proto.hxx:    Standard_EXPORT Standard_Boolean IsInstance(const Handle_Standard_Type& theType) const;  
+/opt/local/include/Standard_Transient_proto.hxx:    Standard_EXPORT Standard_Boolean IsInstance(const Standard_CString theTypeName) const;  
+/opt/local/include/Standard_Transient_proto.hxx:    Standard_EXPORT Standard_Boolean IsKind(const Handle_Standard_Type& theType) const;
+/opt/local/include/Standard_Transient_proto.hxx:    Standard_EXPORT Standard_Boolean IsKind(const Standard_CString theTypeName) const;
+/opt/local/include/Standard_Type.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean SubType (const Handle(Standard_Type)& aOther)  const;
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean SubType (const Standard_CString theName)  const;
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean IsImported()  const;
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean IsPrimitive()  const;
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean IsEnumeration()  const;
+/opt/local/include/Standard_Type.hxx:  Standard_EXPORT   Standard_Boolean IsClass()  const;
+/opt/local/include/Standard_TypeDef.hxx:#define Standard_False (Standard_Boolean)0
+/opt/local/include/Standard_TypeDef.hxx:#define Standard_True  (Standard_Boolean)1
+/opt/local/include/Standard_TypeDef.hxx:typedef unsigned int  Standard_Boolean;
+/opt/local/include/TopTools_DataMapOfShapeListOfShape.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopTools_DataMapOfShapeListOfShape.hxx:  Standard_EXPORT   Standard_Boolean Bind (const TopoDS_Shape& K, const TopTools_ListOfShape& I) ;
+/opt/local/include/TopTools_DataMapOfShapeListOfShape.hxx:  Standard_EXPORT   Standard_Boolean IsBound (const TopoDS_Shape& K)  const;
+/opt/local/include/TopTools_DataMapOfShapeListOfShape.hxx:  Standard_EXPORT   Standard_Boolean UnBind (const TopoDS_Shape& K) ;
+/opt/local/include/TopoDS.lxx:inline static Standard_Boolean TopoDS_Mismatch(const TopoDS_Shape& S,
+/opt/local/include/TopoDSToStep_Root.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDSToStep_Root.hxx:  Standard_EXPORT   Standard_Boolean IsDone()  const;
+/opt/local/include/TopoDSToStep_Root.hxx:  Standard_Boolean done;
+/opt/local/include/TopoDSToStep_Tool.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT TopoDSToStep_Tool(const MoniTool_DataMapOfShapeTransient& M, const Standard_Boolean FacetedContext);
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT   void Init (const MoniTool_DataMapOfShapeTransient& M, const Standard_Boolean FacetedContext) ;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT   Standard_Boolean IsBound (const TopoDS_Shape& S) ;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT   Standard_Boolean Faceted()  const;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT   void SetSurfaceReversed (const Standard_Boolean B) ;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_EXPORT   Standard_Boolean SurfaceReversed()  const;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_Boolean myFacetedContext;
+/opt/local/include/TopoDSToStep_Tool.hxx:  Standard_Boolean myReversedSurface;
+/opt/local/include/TopoDSToStep_WireframeBuilder.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDSToStep_WireframeBuilder.hxx:  Standard_EXPORT   Standard_Boolean GetTrimmedCurveFromEdge (const TopoDS_Edge& E, const TopoDS_Face& F, MoniTool_DataMapOfShapeTransient& M, Handle(TColStd_HSequenceOfTransient)& L)  const;
+/opt/local/include/TopoDSToStep_WireframeBuilder.hxx:  Standard_EXPORT   Standard_Boolean GetTrimmedCurveFromFace (const TopoDS_Face& F, MoniTool_DataMapOfShapeTransient& M, Handle(TColStd_HSequenceOfTransient)& L)  const;
+/opt/local/include/TopoDSToStep_WireframeBuilder.hxx:  Standard_EXPORT   Standard_Boolean GetTrimmedCurveFromShape (const TopoDS_Shape& S, MoniTool_DataMapOfShapeTransient& M, Handle(TColStd_HSequenceOfTransient)& L)  const;
+/opt/local/include/TopoDS_Iterator.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDS_Iterator.hxx:    TopoDS_Iterator(const TopoDS_Shape& S, const Standard_Boolean cumOri = Standard_True, const Standard_Boolean cumLoc = Standard_True);
+/opt/local/include/TopoDS_Iterator.hxx:  Standard_EXPORT   void Initialize (const TopoDS_Shape& S, const Standard_Boolean cumOri = Standard_True, const Standard_Boolean cumLoc = Standard_True) ;
+/opt/local/include/TopoDS_Iterator.hxx:      Standard_Boolean More()  const;
+/opt/local/include/TopoDS_Iterator.lxx:                                        const Standard_Boolean cumOri,
+/opt/local/include/TopoDS_Iterator.lxx:                                        const Standard_Boolean cumLoc)
+/opt/local/include/TopoDS_Iterator.lxx:inline Standard_Boolean TopoDS_Iterator::More() const
+/opt/local/include/TopoDS_ListIteratorOfListOfShape.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDS_ListIteratorOfListOfShape.hxx:      Standard_Boolean More()  const;
+/opt/local/include/TopoDS_ListOfShape.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDS_ListOfShape.hxx:      Standard_Boolean IsEmpty()  const;
+/opt/local/include/TopoDS_Shape.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean IsNull()  const;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Free()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Free (const Standard_Boolean F) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Locked()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Locked (const Standard_Boolean F) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Modified()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Modified (const Standard_Boolean M) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Checked()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Checked (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Orientable()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Orientable (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Closed()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Closed (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Infinite()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Infinite (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean Convex()  const;
+/opt/local/include/TopoDS_Shape.hxx:      void Convex (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean IsPartner (const TopoDS_Shape& other)  const;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean IsSame (const TopoDS_Shape& other)  const;
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean IsEqual (const TopoDS_Shape& other)  const;
+/opt/local/include/TopoDS_Shape.hxx:    Standard_Boolean operator == (const TopoDS_Shape& other)  const
+/opt/local/include/TopoDS_Shape.hxx:      Standard_Boolean IsNotEqual (const TopoDS_Shape& other)  const;
+/opt/local/include/TopoDS_Shape.hxx:    Standard_Boolean operator != (const TopoDS_Shape& other)  const
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::IsNull () const
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Free () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Free (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Locked () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Locked (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Modified () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Modified (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Checked () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Checked (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Orientable () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Orientable (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Closed () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Closed (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Infinite () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Infinite (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::Convex () const
+/opt/local/include/TopoDS_Shape.lxx:inline void TopoDS_Shape::Convex (const Standard_Boolean B)
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::IsPartner (const TopoDS_Shape& other) const
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::IsSame (const TopoDS_Shape& other) const
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::IsEqual (const TopoDS_Shape& other) const
+/opt/local/include/TopoDS_Shape.lxx:inline Standard_Boolean TopoDS_Shape::IsNotEqual (const TopoDS_Shape& other) const
+/opt/local/include/TopoDS_TShape.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Free()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Free (const Standard_Boolean F) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Locked()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Locked (const Standard_Boolean F) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Modified()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Modified (const Standard_Boolean M) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Checked()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Checked (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Orientable()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Orientable (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Closed()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Closed (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Infinite()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Infinite (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_TShape.hxx:      Standard_Boolean Convex()  const;
+/opt/local/include/TopoDS_TShape.hxx:      void Convex (const Standard_Boolean C) ;
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Free() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Free(const Standard_Boolean F)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Locked() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Locked(const Standard_Boolean F)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Modified() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Modified(const Standard_Boolean M)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Checked() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Checked(const Standard_Boolean M)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Orientable() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Orientable(const Standard_Boolean M)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Closed() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Closed(const Standard_Boolean M)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Infinite() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Infinite(const Standard_Boolean M)
+/opt/local/include/TopoDS_TShape.lxx:inline Standard_Boolean TopoDS_TShape::Convex() const
+/opt/local/include/TopoDS_TShape.lxx:inline void TopoDS_TShape::Convex(const Standard_Boolean M)
+/opt/local/include/gce_MakeCirc2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gce_MakeCirc2d.hxx:  Standard_EXPORT gce_MakeCirc2d(const gp_Ax2d& XAxis, const Standard_Real Radius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeCirc2d.hxx:  Standard_EXPORT gce_MakeCirc2d(const gp_Pnt2d& Center, const Standard_Real Radius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeCirc2d.hxx:  Standard_EXPORT gce_MakeCirc2d(const gp_Pnt2d& Center, const gp_Pnt2d& Point, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeElips2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gce_MakeElips2d.hxx:  Standard_EXPORT gce_MakeElips2d(const gp_Ax2d& MajorAxis, const Standard_Real MajorRadius, const Standard_Real MinorRadius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeHypr2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gce_MakeHypr2d.hxx:  Standard_EXPORT gce_MakeHypr2d(const gp_Ax2d& MajorAxis, const Standard_Real MajorRadius, const Standard_Real MinorRadius, const Standard_Boolean Sense);
+/opt/local/include/gce_MakeParab2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gce_MakeParab2d.hxx:  Standard_EXPORT gce_MakeParab2d(const gp_Ax2d& MirrorAxis, const Standard_Real Focal, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeParab2d.hxx:  Standard_EXPORT gce_MakeParab2d(const gp_Ax2d& D, const gp_Pnt2d& F, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_MakeParab2d.hxx:  Standard_EXPORT gce_MakeParab2d(const gp_Pnt2d& S1, const gp_Pnt2d& Center, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gce_Root.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gce_Root.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/gce_Root.lxx:inline Standard_Boolean gce_Root::IsDone () const
+/opt/local/include/gp_Ax1.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Ax1.hxx:  Standard_EXPORT   Standard_Boolean IsCoaxial (const gp_Ax1& Other, const Standard_Real AngularTolerance, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Ax1.hxx:      Standard_Boolean IsNormal (const gp_Ax1& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax1.hxx:      Standard_Boolean IsOpposite (const gp_Ax1& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax1.hxx:      Standard_Boolean IsParallel (const gp_Ax1& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax1.lxx:inline Standard_Boolean gp_Ax1::IsNormal
+/opt/local/include/gp_Ax1.lxx:inline Standard_Boolean gp_Ax1::IsOpposite
+/opt/local/include/gp_Ax1.lxx:inline Standard_Boolean gp_Ax1::IsParallel
+/opt/local/include/gp_Ax2.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Ax2.hxx:  Standard_EXPORT   Standard_Boolean IsCoplanar (const gp_Ax2& Other, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax2.hxx:      Standard_Boolean IsCoplanar (const gp_Ax1& A1, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax2.lxx:inline Standard_Boolean gp_Ax2::IsCoplanar 
+/opt/local/include/gp_Ax2.lxx:inline Standard_Boolean gp_Ax2::IsCoplanar
+/opt/local/include/gp_Ax22d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Ax22d.hxx:    gp_Ax22d(const gp_Pnt2d& P, const gp_Dir2d& V, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Ax22d.hxx:    gp_Ax22d(const gp_Ax2d& A, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Ax22d.lxx:			  const Standard_Boolean Sense) : 
+/opt/local/include/gp_Ax22d.lxx:			  const Standard_Boolean Sense) : 
+/opt/local/include/gp_Ax22d.lxx:  Standard_Boolean sign = (vxdir.Crossed(vydir)) >= 0.0;
+/opt/local/include/gp_Ax22d.lxx:  Standard_Boolean sign = (vxdir.Crossed(vydir)) >= 0.0;
+/opt/local/include/gp_Ax22d.lxx:  Standard_Boolean sign = (vxdir.Crossed(vydir)) >= 0.0;
+/opt/local/include/gp_Ax22d.lxx:  Standard_Boolean sign = (vxdir.Crossed(vydir)) >= 0.0;
+/opt/local/include/gp_Ax2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Ax2d.hxx:  Standard_EXPORT   Standard_Boolean IsCoaxial (const gp_Ax2d& Other, const Standard_Real AngularTolerance, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Ax2d.hxx:      Standard_Boolean IsNormal (const gp_Ax2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax2d.hxx:      Standard_Boolean IsOpposite (const gp_Ax2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax2d.hxx:      Standard_Boolean IsParallel (const gp_Ax2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax2d.lxx:inline Standard_Boolean gp_Ax2d::IsNormal
+/opt/local/include/gp_Ax2d.lxx:inline Standard_Boolean gp_Ax2d::IsOpposite
+/opt/local/include/gp_Ax2d.lxx:inline Standard_Boolean gp_Ax2d::IsParallel
+/opt/local/include/gp_Ax3.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Ax3.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Ax3.hxx:      Standard_Boolean IsCoplanar (const gp_Ax3& Other, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax3.hxx:      Standard_Boolean IsCoplanar (const gp_Ax1& A1, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Ax3.lxx:  Standard_Boolean direct = Direct();
+/opt/local/include/gp_Ax3.lxx:  Standard_Boolean direct = Direct();
+/opt/local/include/gp_Ax3.lxx:  Standard_Boolean direct = Direct();
+/opt/local/include/gp_Ax3.lxx:  Standard_Boolean direct = Direct();
+/opt/local/include/gp_Ax3.lxx:inline Standard_Boolean  gp_Ax3::Direct()const 
+/opt/local/include/gp_Ax3.lxx:inline Standard_Boolean gp_Ax3::IsCoplanar
+/opt/local/include/gp_Ax3.lxx:inline Standard_Boolean gp_Ax3::IsCoplanar
+/opt/local/include/gp_Circ.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Circ.hxx:      Standard_Boolean Contains (const gp_Pnt& P, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Circ.lxx:inline Standard_Boolean gp_Circ::Contains
+/opt/local/include/gp_Circ2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Circ2d.hxx:    gp_Circ2d(const gp_Ax2d& XAxis, const Standard_Real Radius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Circ2d.hxx:      Standard_Boolean Contains (const gp_Pnt2d& P, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Circ2d.hxx:      Standard_Boolean IsDirect()  const;
+/opt/local/include/gp_Circ2d.lxx:			     const Standard_Boolean Sense) : radius(Radius)
+/opt/local/include/gp_Circ2d.lxx:inline Standard_Boolean gp_Circ2d::Contains
+/opt/local/include/gp_Circ2d.lxx:inline Standard_Boolean gp_Circ2d::IsDirect() const
+/opt/local/include/gp_Cone.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Cone.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Cone.lxx:inline Standard_Boolean gp_Cone::Direct() const
+/opt/local/include/gp_Cylinder.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Cylinder.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Cylinder.lxx:inline Standard_Boolean gp_Cylinder::Direct() const
+/opt/local/include/gp_Dir.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Dir.hxx:      Standard_Boolean IsEqual (const gp_Dir& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir.hxx:      Standard_Boolean IsNormal (const gp_Dir& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir.hxx:      Standard_Boolean IsOpposite (const gp_Dir& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir.hxx:      Standard_Boolean IsParallel (const gp_Dir& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir.lxx:inline Standard_Boolean gp_Dir::IsEqual
+/opt/local/include/gp_Dir.lxx:inline Standard_Boolean gp_Dir::IsNormal
+/opt/local/include/gp_Dir.lxx:inline Standard_Boolean gp_Dir::IsOpposite
+/opt/local/include/gp_Dir.lxx:inline Standard_Boolean gp_Dir::IsParallel
+/opt/local/include/gp_Dir2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Dir2d.hxx:      Standard_Boolean IsEqual (const gp_Dir2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir2d.hxx:      Standard_Boolean IsNormal (const gp_Dir2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir2d.hxx:      Standard_Boolean IsOpposite (const gp_Dir2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir2d.hxx:      Standard_Boolean IsParallel (const gp_Dir2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Dir2d.lxx:inline Standard_Boolean gp_Dir2d::IsEqual
+/opt/local/include/gp_Dir2d.lxx:inline Standard_Boolean gp_Dir2d::IsNormal
+/opt/local/include/gp_Dir2d.lxx:inline Standard_Boolean gp_Dir2d::IsOpposite
+/opt/local/include/gp_Dir2d.lxx:inline Standard_Boolean gp_Dir2d::IsParallel
+/opt/local/include/gp_Elips2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Elips2d.hxx:    gp_Elips2d(const gp_Ax2d& MajorAxis, const Standard_Real MajorRadius, const Standard_Real MinorRadius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Elips2d.hxx:      Standard_Boolean IsDirect()  const;
+/opt/local/include/gp_Elips2d.lxx:			       const Standard_Boolean Sense) :  
+/opt/local/include/gp_Elips2d.lxx:inline Standard_Boolean gp_Elips2d::IsDirect() const
+/opt/local/include/gp_GTrsf.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_GTrsf.hxx:      Standard_Boolean IsNegative()  const;
+/opt/local/include/gp_GTrsf.hxx:      Standard_Boolean IsSingular()  const;
+/opt/local/include/gp_GTrsf.lxx:inline Standard_Boolean gp_GTrsf::IsNegative () const
+/opt/local/include/gp_GTrsf.lxx:inline Standard_Boolean gp_GTrsf::IsSingular () const
+/opt/local/include/gp_GTrsf2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_GTrsf2d.hxx:      Standard_Boolean IsNegative()  const;
+/opt/local/include/gp_GTrsf2d.hxx:      Standard_Boolean IsSingular()  const;
+/opt/local/include/gp_GTrsf2d.lxx:inline Standard_Boolean gp_GTrsf2d::IsNegative () const
+/opt/local/include/gp_GTrsf2d.lxx:inline Standard_Boolean gp_GTrsf2d::IsSingular () const
+/opt/local/include/gp_Hypr2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Hypr2d.hxx:  Standard_EXPORT gp_Hypr2d(const gp_Ax2d& MajorAxis, const Standard_Real MajorRadius, const Standard_Real MinorRadius, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Hypr2d.hxx:      Standard_Boolean IsDirect()  const;
+/opt/local/include/gp_Hypr2d.lxx:		      const Standard_Boolean Sense) :  
+/opt/local/include/gp_Hypr2d.lxx:  Standard_Boolean sign = (pos.XDirection().Crossed(pos.YDirection())) >= 0.0;
+/opt/local/include/gp_Hypr2d.lxx:  Standard_Boolean sign = (pos.XDirection().Crossed(pos.YDirection())) >= 0.0;
+/opt/local/include/gp_Hypr2d.lxx:  Standard_Boolean sign = (pos.XDirection().Crossed(pos.YDirection())) >= 0.0;
+/opt/local/include/gp_Hypr2d.lxx:inline Standard_Boolean gp_Hypr2d::IsDirect() const
+/opt/local/include/gp_Lin.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Lin.hxx:      Standard_Boolean Contains (const gp_Pnt& P, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Lin.lxx:inline Standard_Boolean gp_Lin::Contains
+/opt/local/include/gp_Lin2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Lin2d.hxx:      Standard_Boolean Contains (const gp_Pnt2d& P, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Lin2d.lxx:inline Standard_Boolean gp_Lin2d::Contains
+/opt/local/include/gp_Mat.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Mat.hxx:      Standard_Boolean IsSingular()  const;
+/opt/local/include/gp_Mat.lxx:inline Standard_Boolean gp_Mat::IsSingular () const
+/opt/local/include/gp_Mat2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Mat2d.hxx:      Standard_Boolean IsSingular()  const;
+/opt/local/include/gp_Mat2d.lxx:inline Standard_Boolean gp_Mat2d::IsSingular () const
+/opt/local/include/gp_Parab2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Parab2d.hxx:    gp_Parab2d(const gp_Ax2d& MirrorAxis, const Standard_Real Focal, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Parab2d.hxx:  Standard_EXPORT gp_Parab2d(const gp_Ax2d& D, const gp_Pnt2d& F, const Standard_Boolean Sense = Standard_True);
+/opt/local/include/gp_Parab2d.hxx:      Standard_Boolean IsDirect()  const;
+/opt/local/include/gp_Parab2d.lxx:			       const Standard_Boolean Sense) :
+/opt/local/include/gp_Parab2d.lxx:inline Standard_Boolean gp_Parab2d::IsDirect() const
+/opt/local/include/gp_Pln.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Pln.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Pln.hxx:      Standard_Boolean Contains (const gp_Pnt& P, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Pln.hxx:      Standard_Boolean Contains (const gp_Lin& L, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Pln.lxx:inline Standard_Boolean gp_Pln::Direct()const
+/opt/local/include/gp_Pln.lxx:inline Standard_Boolean gp_Pln::Contains
+/opt/local/include/gp_Pln.lxx:inline Standard_Boolean gp_Pln::Contains
+/opt/local/include/gp_Pnt.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Pnt.hxx:      Standard_Boolean IsEqual (const gp_Pnt& Other, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Pnt.lxx:inline Standard_Boolean gp_Pnt::IsEqual
+/opt/local/include/gp_Pnt2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Pnt2d.hxx:      Standard_Boolean IsEqual (const gp_Pnt2d& Other, const Standard_Real LinearTolerance)  const;
+/opt/local/include/gp_Pnt2d.lxx:inline Standard_Boolean gp_Pnt2d::IsEqual
+/opt/local/include/gp_Quaternion.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Quaternion.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const gp_Quaternion& theOther)  const;
+/opt/local/include/gp_Sphere.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Sphere.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Sphere.lxx:inline Standard_Boolean gp_Sphere::Direct() const
+/opt/local/include/gp_Torus.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Torus.hxx:      Standard_Boolean Direct()  const;
+/opt/local/include/gp_Torus.lxx:inline Standard_Boolean gp_Torus::Direct() const
+/opt/local/include/gp_Trsf.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Trsf.hxx:      Standard_Boolean IsNegative()  const;
+/opt/local/include/gp_Trsf.hxx:  Standard_EXPORT   Standard_Boolean GetRotation (gp_XYZ& theAxis, Standard_Real& theAngle)  const;
+/opt/local/include/gp_Trsf.lxx:inline Standard_Boolean gp_Trsf::IsNegative() const 
+/opt/local/include/gp_Trsf2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Trsf2d.hxx:      Standard_Boolean IsNegative()  const;
+/opt/local/include/gp_Trsf2d.lxx:inline Standard_Boolean gp_Trsf2d::IsNegative() const
+/opt/local/include/gp_Vec.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Vec.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const gp_Vec& Other, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec.hxx:      Standard_Boolean IsNormal (const gp_Vec& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec.hxx:      Standard_Boolean IsOpposite (const gp_Vec& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec.hxx:      Standard_Boolean IsParallel (const gp_Vec& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec.lxx:inline Standard_Boolean gp_Vec::IsNormal
+/opt/local/include/gp_Vec.lxx:inline Standard_Boolean gp_Vec::IsOpposite
+/opt/local/include/gp_Vec.lxx:inline Standard_Boolean gp_Vec::IsParallel
+/opt/local/include/gp_Vec2d.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_Vec2d.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const gp_Vec2d& Other, const Standard_Real LinearTolerance, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec2d.hxx:      Standard_Boolean IsNormal (const gp_Vec2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec2d.hxx:      Standard_Boolean IsOpposite (const gp_Vec2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec2d.hxx:      Standard_Boolean IsParallel (const gp_Vec2d& Other, const Standard_Real AngularTolerance)  const;
+/opt/local/include/gp_Vec2d.lxx:inline Standard_Boolean gp_Vec2d::IsNormal
+/opt/local/include/gp_Vec2d.lxx:inline Standard_Boolean gp_Vec2d::IsOpposite
+/opt/local/include/gp_Vec2d.lxx:inline Standard_Boolean gp_Vec2d::IsParallel
+/opt/local/include/gp_XY.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_XY.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const gp_XY& Other, const Standard_Real Tolerance)  const;
+/opt/local/include/gp_XYZ.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/gp_XYZ.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const gp_XYZ& Other, const Standard_Real Tolerance)  const;
+/opt/local/include/math.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math.hxx:  Standard_EXPORT static   Standard_Boolean OrderedGaussPointsAndWeights (const Standard_Integer Index, math_Vector& Points, math_Vector& Weights) ;
+/opt/local/include/math.hxx:  Standard_EXPORT static   Standard_Boolean KronrodPointsAndWeights (const Standard_Integer Index, math_Vector& Points, math_Vector& Weights) ;
+/opt/local/include/math_Array1OfValueAndWeight.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Array1OfValueAndWeight.hxx:      Standard_Boolean IsAllocated()  const;
+/opt/local/include/math_Array1OfValueAndWeight.hxx:  Standard_Boolean isAllocated;
+/opt/local/include/math_BFGS.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_BFGS.hxx:  Standard_EXPORT virtual   Standard_Boolean IsSolutionReached (math_MultipleVarFunctionWithGradient& F)  const;
+/opt/local/include/math_BFGS.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_BFGS.hxx:  Standard_Boolean Done;
+/opt/local/include/math_BFGS.lxx:inline Standard_Boolean math_BFGS::IsDone() const { return Done; }
+/opt/local/include/math_BissecNewton.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_BissecNewton.hxx:    virtual   Standard_Boolean IsSolutionReached (math_FunctionWithDerivative& theFunction) ;
+/opt/local/include/math_BissecNewton.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_BissecNewton.hxx:  Standard_Boolean Done;
+/opt/local/include/math_BissecNewton.lxx:inline Standard_Boolean math_BissecNewton::IsSolutionReached(math_FunctionWithDerivative&)
+/opt/local/include/math_BissecNewton.lxx:inline Standard_Boolean math_BissecNewton::IsDone() const { return Done; }
+/opt/local/include/math_BracketMinimum.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_BracketMinimum.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_BracketMinimum.hxx:  Standard_Boolean Done;
+/opt/local/include/math_BracketMinimum.hxx:  Standard_Boolean myFA;
+/opt/local/include/math_BracketMinimum.hxx:  Standard_Boolean myFB;
+/opt/local/include/math_BracketMinimum.lxx:inline Standard_Boolean math_BracketMinimum::IsDone() const { return Done; }
+/opt/local/include/math_BracketedRoot.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_BracketedRoot.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_BracketedRoot.hxx:  Standard_Boolean Done;
+/opt/local/include/math_BracketedRoot.lxx:inline Standard_Boolean math_BracketedRoot::IsDone() const { return Done; }
+/opt/local/include/math_BrentMinimum.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_BrentMinimum.hxx:    virtual   Standard_Boolean IsSolutionReached (math_Function& theFunction) ;
+/opt/local/include/math_BrentMinimum.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_BrentMinimum.hxx:  Standard_Boolean Done;
+/opt/local/include/math_BrentMinimum.hxx:  Standard_Boolean myF;
+/opt/local/include/math_BrentMinimum.lxx:inline Standard_Boolean math_BrentMinimum::IsSolutionReached(math_Function&)
+/opt/local/include/math_BrentMinimum.lxx:inline Standard_Boolean math_BrentMinimum::IsDone() const
+/opt/local/include/math_CompareOfValueAndWeight.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_CompareOfValueAndWeight.hxx:  Standard_EXPORT   Standard_Boolean IsLower (const math_ValueAndWeight& Left, const math_ValueAndWeight& Right)  const;
+/opt/local/include/math_CompareOfValueAndWeight.hxx:  Standard_EXPORT   Standard_Boolean IsGreater (const math_ValueAndWeight& Left, const math_ValueAndWeight& Right)  const;
+/opt/local/include/math_CompareOfValueAndWeight.hxx:  Standard_EXPORT   Standard_Boolean IsEqual (const math_ValueAndWeight& Left, const math_ValueAndWeight& Right)  const;
+/opt/local/include/math_ComputeGaussPointsAndWeights.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_ComputeGaussPointsAndWeights.hxx:  Standard_EXPORT   Standard_Boolean IsDone()  const;
+/opt/local/include/math_ComputeGaussPointsAndWeights.hxx:  Standard_Boolean myIsDone;
+/opt/local/include/math_ComputeKronrodPointsAndWeights.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_ComputeKronrodPointsAndWeights.hxx:  Standard_EXPORT   Standard_Boolean IsDone()  const;
+/opt/local/include/math_ComputeKronrodPointsAndWeights.hxx:  Standard_Boolean myIsDone;
+/opt/local/include/math_Crout.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Crout.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Crout.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Crout.lxx:inline Standard_Boolean math_Crout::IsDone() const { return Done; }
+/opt/local/include/math_DirectPolynomialRoots.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_DirectPolynomialRoots.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_DirectPolynomialRoots.hxx:      Standard_Boolean InfiniteRoots()  const;
+/opt/local/include/math_DirectPolynomialRoots.hxx:  Standard_Boolean Done;
+/opt/local/include/math_DirectPolynomialRoots.hxx:  Standard_Boolean InfiniteStatus;
+/opt/local/include/math_DirectPolynomialRoots.lxx:inline Standard_Boolean math_DirectPolynomialRoots::IsDone() const 
+/opt/local/include/math_DirectPolynomialRoots.lxx:inline Standard_Boolean math_DirectPolynomialRoots::InfiniteRoots() const 
+/opt/local/include/math_DoubleTab.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_DoubleTab.hxx:  Standard_Boolean isAllocated;
+/opt/local/include/math_EigenValuesSearcher.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_EigenValuesSearcher.hxx:  Standard_EXPORT   Standard_Boolean IsDone()  const;
+/opt/local/include/math_EigenValuesSearcher.hxx:  Standard_Boolean myIsDone;
+/opt/local/include/math_FRPR.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FRPR.hxx:    virtual   Standard_Boolean IsSolutionReached (math_MultipleVarFunctionWithGradient& theFunction) ;
+/opt/local/include/math_FRPR.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_FRPR.hxx:  Standard_Boolean Done;
+/opt/local/include/math_FRPR.lxx:inline Standard_Boolean math_FRPR::IsSolutionReached(math_MultipleVarFunctionWithGradient&)
+/opt/local/include/math_FRPR.lxx:inline Standard_Boolean math_FRPR::IsDone() const
+/opt/local/include/math_Function.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Function.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const Standard_Real X, Standard_Real& F)  = 0;
+/opt/local/include/math_FunctionAllRoots.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionAllRoots.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_FunctionAllRoots.hxx:  Standard_Boolean done;
+/opt/local/include/math_FunctionAllRoots.lxx:inline Standard_Boolean math_FunctionAllRoots::IsDone() const { return done; }
+/opt/local/include/math_FunctionRoot.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionRoot.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_FunctionRoot.hxx:  Standard_Boolean Done;
+/opt/local/include/math_FunctionRoot.lxx:inline Standard_Boolean math_FunctionRoot::IsDone() const { return Done; }
+/opt/local/include/math_FunctionRoots.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionRoots.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_FunctionRoots.hxx:      Standard_Boolean IsAllNull()  const;
+/opt/local/include/math_FunctionRoots.hxx:  Standard_Boolean Done;
+/opt/local/include/math_FunctionRoots.hxx:  Standard_Boolean AllNull;
+/opt/local/include/math_FunctionRoots.lxx:inline Standard_Boolean math_FunctionRoots::IsDone() const { return Done; }
+/opt/local/include/math_FunctionRoots.lxx:inline  Standard_Boolean math_FunctionRoots::IsAllNull() const{
+/opt/local/include/math_FunctionSet.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionSet.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const math_Vector& X, math_Vector& F)  = 0;
+/opt/local/include/math_FunctionSetRoot.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionSetRoot.hxx:    virtual   Standard_Boolean IsSolutionReached (math_FunctionSetWithDerivatives& F) ;
+/opt/local/include/math_FunctionSetRoot.hxx:  Standard_EXPORT   void Perform (math_FunctionSetWithDerivatives& theFunction, const math_Vector& theStartingPoint, const Standard_Boolean theStopOnDivergent = Standard_False) ;
+/opt/local/include/math_FunctionSetRoot.hxx:  Standard_EXPORT   void Perform (math_FunctionSetWithDerivatives& theFunction, const math_Vector& theStartingPoint, const math_Vector& theInfBound, const math_Vector& theSupBound, const Standard_Boolean theStopOnDivergent = Standard_False) ;
+/opt/local/include/math_FunctionSetRoot.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_FunctionSetRoot.hxx:  Standard_EXPORT   Standard_Boolean IsDivergent()  const;
+/opt/local/include/math_FunctionSetRoot.hxx:  Standard_Boolean Done;
+/opt/local/include/math_FunctionSetRoot.hxx:  Standard_Boolean myIsDivergent;
+/opt/local/include/math_FunctionSetRoot.lxx:inline Standard_Boolean math_FunctionSetRoot::IsSolutionReached(math_FunctionSetWithDerivatives&)
+/opt/local/include/math_FunctionSetRoot.lxx:inline Standard_Boolean math_FunctionSetRoot::IsDone() const
+/opt/local/include/math_FunctionSetRoot.lxx:inline Standard_Boolean math_FunctionSetRoot::IsDivergent() const
+/opt/local/include/math_FunctionSetWithDerivatives.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionSetWithDerivatives.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const math_Vector& X, math_Vector& F)  = 0;
+/opt/local/include/math_FunctionSetWithDerivatives.hxx:  Standard_EXPORT virtual   Standard_Boolean Derivatives (const math_Vector& X, math_Matrix& D)  = 0;
+/opt/local/include/math_FunctionSetWithDerivatives.hxx:  Standard_EXPORT virtual   Standard_Boolean Values (const math_Vector& X, math_Vector& F, math_Matrix& D)  = 0;
+/opt/local/include/math_FunctionWithDerivative.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_FunctionWithDerivative.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const Standard_Real X, Standard_Real& F)  = 0;
+/opt/local/include/math_FunctionWithDerivative.hxx:  Standard_EXPORT virtual   Standard_Boolean Derivative (const Standard_Real X, Standard_Real& D)  = 0;
+/opt/local/include/math_FunctionWithDerivative.hxx:  Standard_EXPORT virtual   Standard_Boolean Values (const Standard_Real X, Standard_Real& F, Standard_Real& D)  = 0;
+/opt/local/include/math_Gauss.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Gauss.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Gauss.hxx:  Standard_Boolean Singular;
+/opt/local/include/math_Gauss.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Gauss.lxx:inline Standard_Boolean math_Gauss::IsDone() const { return Done; }
+/opt/local/include/math_GaussLeastSquare.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_GaussLeastSquare.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_GaussLeastSquare.hxx:  Standard_Boolean Singular;
+/opt/local/include/math_GaussLeastSquare.hxx:  Standard_Boolean Done;
+/opt/local/include/math_GaussLeastSquare.lxx:inline Standard_Boolean math_GaussLeastSquare::IsDone() const { return Done; }
+/opt/local/include/math_GaussMultipleIntegration.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_GaussMultipleIntegration.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_GaussMultipleIntegration.hxx:  Standard_Boolean Done;
+/opt/local/include/math_GaussMultipleIntegration.lxx:inline Standard_Boolean math_GaussMultipleIntegration::IsDone() const 
+/opt/local/include/math_GaussSetIntegration.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_GaussSetIntegration.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_GaussSetIntegration.hxx:  Standard_Boolean Done;
+/opt/local/include/math_GaussSetIntegration.lxx:inline Standard_Boolean math_GaussSetIntegration::IsDone() const 
+/opt/local/include/math_GaussSingleIntegration.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_GaussSingleIntegration.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_GaussSingleIntegration.hxx:  Standard_Boolean Done;
+/opt/local/include/math_GaussSingleIntegration.lxx:inline Standard_Boolean math_GaussSingleIntegration::IsDone() const 
+/opt/local/include/math_GlobOptMin.hxx:  Standard_EXPORT void Perform(const Standard_Boolean isFindSingleSolution = Standard_False);
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean isDone();
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean computeLocalExtremum(const math_Vector& thePnt, Standard_Real& theVal, math_Vector& theOutPnt);
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean isInside(const math_Vector& thePnt);
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean isStored(const math_Vector &thePnt);
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean myIsFindSingleSolution; // Default value is false.
+/opt/local/include/math_GlobOptMin.hxx:  Standard_Boolean myDone;
+/opt/local/include/math_Householder.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Householder.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Householder.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Householder.lxx:inline Standard_Boolean math_Householder::IsDone() const {return Done; }
+/opt/local/include/math_Jacobi.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Jacobi.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Jacobi.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Jacobi.lxx:inline Standard_Boolean math_Jacobi::IsDone() const { return Done; }
+/opt/local/include/math_KronrodSingleIntegration.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_KronrodSingleIntegration.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_KronrodSingleIntegration.hxx:  Standard_EXPORT static   Standard_Boolean GKRule (math_Function& theFunction, const Standard_Real theLower, const Standard_Real theUpper, const math_Vector& theGaussP, const math_Vector& theGaussW, const math_Vector& theKronrodP, const math_Vector& theKronrodW, Standard_Real& theValue, Standard_Real& theError) ;
+/opt/local/include/math_KronrodSingleIntegration.hxx:  Standard_Boolean myIsDone;
+/opt/local/include/math_KronrodSingleIntegration.lxx:inline Standard_Boolean math_KronrodSingleIntegration::IsDone() const 
+/opt/local/include/math_MultipleVarFunction.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_MultipleVarFunction.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const math_Vector& X, Standard_Real& F)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithGradient.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_MultipleVarFunctionWithGradient.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const math_Vector& X, Standard_Real& F)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithGradient.hxx:  Standard_EXPORT virtual   Standard_Boolean Gradient (const math_Vector& X, math_Vector& G)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithGradient.hxx:  Standard_EXPORT virtual   Standard_Boolean Values (const math_Vector& X, Standard_Real& F, math_Vector& G)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithHessian.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_MultipleVarFunctionWithHessian.hxx:  Standard_EXPORT virtual   Standard_Boolean Value (const math_Vector& X, Standard_Real& F)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithHessian.hxx:  Standard_EXPORT virtual   Standard_Boolean Gradient (const math_Vector& X, math_Vector& G)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithHessian.hxx:  Standard_EXPORT virtual   Standard_Boolean Values (const math_Vector& X, Standard_Real& F, math_Vector& G)  = 0;
+/opt/local/include/math_MultipleVarFunctionWithHessian.hxx:  Standard_EXPORT virtual   Standard_Boolean Values (const math_Vector& X, Standard_Real& F, math_Vector& G, math_Matrix& H)  = 0;
+/opt/local/include/math_NewtonFunctionRoot.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_NewtonFunctionRoot.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_NewtonFunctionRoot.hxx:  Standard_Boolean Done;
+/opt/local/include/math_NewtonFunctionRoot.lxx:inline Standard_Boolean math_NewtonFunctionRoot::IsDone() const {return Done;}
+/opt/local/include/math_NewtonFunctionSetRoot.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_NewtonFunctionSetRoot.hxx:    virtual   Standard_Boolean IsSolutionReached (math_FunctionSetWithDerivatives& F) ;
+/opt/local/include/math_NewtonFunctionSetRoot.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_NewtonFunctionSetRoot.hxx:  Standard_Boolean Done;
+/opt/local/include/math_NewtonFunctionSetRoot.lxx:inline Standard_Boolean math_NewtonFunctionSetRoot::IsSolutionReached(math_FunctionSetWithDerivatives&)
+/opt/local/include/math_NewtonFunctionSetRoot.lxx:inline Standard_Boolean math_NewtonFunctionSetRoot::IsDone() const
+/opt/local/include/math_NewtonMinimum.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_NewtonMinimum.hxx:  Standard_EXPORT math_NewtonMinimum(const math_MultipleVarFunctionWithHessian& theFunction, const Standard_Real theTolerance = 1.0e-7, const Standard_Integer theNbIterations = 40, const Standard_Real theConvexity = 1.0e-6, const Standard_Boolean theWithSingularity = Standard_True);
+/opt/local/include/math_NewtonMinimum.hxx:    virtual   Standard_Boolean IsConverged()  const;
+/opt/local/include/math_NewtonMinimum.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_NewtonMinimum.hxx:      Standard_Boolean IsConvex()  const;
+/opt/local/include/math_NewtonMinimum.hxx:  Standard_Boolean NoConvexTreatement;
+/opt/local/include/math_NewtonMinimum.hxx:  Standard_Boolean Convex;
+/opt/local/include/math_NewtonMinimum.hxx:  Standard_Boolean myIsBoundsDefined;
+/opt/local/include/math_NewtonMinimum.hxx:  Standard_Boolean Done;
+/opt/local/include/math_NewtonMinimum.lxx:inline Standard_Boolean math_NewtonMinimum::IsConverged() const 
+/opt/local/include/math_NewtonMinimum.lxx:inline Standard_Boolean math_NewtonMinimum::IsDone() const 
+/opt/local/include/math_Powell.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Powell.hxx:    virtual   Standard_Boolean IsSolutionReached (math_MultipleVarFunction& theFunction) ;
+/opt/local/include/math_Powell.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Powell.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Powell.lxx:inline Standard_Boolean math_Powell::IsSolutionReached(math_MultipleVarFunction&)
+/opt/local/include/math_Powell.lxx:inline Standard_Boolean math_Powell::IsDone() const
+/opt/local/include/math_Recipes.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_SVD.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_SVD.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_SVD.hxx:  Standard_Boolean Done;
+/opt/local/include/math_SVD.lxx:inline Standard_Boolean math_SVD::IsDone() const { return Done; }
+/opt/local/include/math_SingleTab.hxx:  Standard_Boolean isAllocated;
+/opt/local/include/math_TrigonometricFunctionRoots.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_TrigonometricFunctionRoots.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_TrigonometricFunctionRoots.hxx:      Standard_Boolean InfiniteRoots()  const;
+/opt/local/include/math_TrigonometricFunctionRoots.hxx:  Standard_Boolean InfiniteStatus;
+/opt/local/include/math_TrigonometricFunctionRoots.hxx:  Standard_Boolean Done;
+/opt/local/include/math_TrigonometricFunctionRoots.lxx:inline Standard_Boolean math_TrigonometricFunctionRoots::InfiniteRoots() const { return InfiniteStatus; }
+/opt/local/include/math_TrigonometricFunctionRoots.lxx:inline Standard_Boolean math_TrigonometricFunctionRoots::IsDone() const 
+/opt/local/include/math_Uzawa.hxx:#include <Standard_Boolean.hxx>
+/opt/local/include/math_Uzawa.hxx:      Standard_Boolean IsDone()  const;
+/opt/local/include/math_Uzawa.hxx:  Standard_Boolean Done;
+/opt/local/include/math_Uzawa.lxx:inline Standard_Boolean math_Uzawa::IsDone() const { return Done; }
+/opt/local/include/occgeom.cpp:      Standard_Boolean result = BRepTools::Read(occgeo->shape, const_cast<char*> (filename),aBuilder);

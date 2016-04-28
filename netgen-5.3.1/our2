@@ -1,0 +1,108 @@
+Making install in libsrc
+Making install in general
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/opt/netgen/include" || ../.././install-sh -c -d "/opt/netgen/include"
+ /usr/bin/install -c -m 644 ngexception.hpp '/opt/netgen/include'
+Making install in gprim
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in linalg
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in include
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/opt/netgen/include" || ../.././install-sh -c -d "/opt/netgen/include"
+ /usr/bin/install -c -m 644 nginterface.h nginterface_v2.hpp '/opt/netgen/include'
+Making install in meshing
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libmesh.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libmesh.0.dylib /opt/netgen/lib/libmesh.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libmesh.0.dylib libmesh.dylib || { rm -f libmesh.dylib && ln -s libmesh.0.dylib libmesh.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libmesh.lai /opt/netgen/lib/libmesh.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in interface
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libinterface.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libinterface.0.dylib /opt/netgen/lib/libinterface.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libinterface.0.dylib libinterface.dylib || { rm -f libinterface.dylib && ln -s libinterface.0.dylib libinterface.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libinterface.lai /opt/netgen/lib/libinterface.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in csg
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libcsg.la libcsgvis.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libcsg.0.dylib /opt/netgen/lib/libcsg.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libcsg.0.dylib libcsg.dylib || { rm -f libcsg.dylib && ln -s libcsg.0.dylib libcsg.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libcsg.lai /opt/netgen/lib/libcsg.la
+libtool: install: /usr/bin/install -c .libs/libcsgvis.0.dylib /opt/netgen/lib/libcsgvis.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libcsgvis.0.dylib libcsgvis.dylib || { rm -f libcsgvis.dylib && ln -s libcsgvis.0.dylib libcsgvis.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libcsgvis.lai /opt/netgen/lib/libcsgvis.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in geom2d
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgeom2d.la libgeom2dvis.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libgeom2d.0.dylib /opt/netgen/lib/libgeom2d.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libgeom2d.0.dylib libgeom2d.dylib || { rm -f libgeom2d.dylib && ln -s libgeom2d.0.dylib libgeom2d.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgeom2d.lai /opt/netgen/lib/libgeom2d.la
+libtool: install: /usr/bin/install -c .libs/libgeom2dvis.0.dylib /opt/netgen/lib/libgeom2dvis.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libgeom2dvis.0.dylib libgeom2dvis.dylib || { rm -f libgeom2dvis.dylib && ln -s libgeom2dvis.0.dylib libgeom2dvis.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgeom2dvis.lai /opt/netgen/lib/libgeom2dvis.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in occ
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libocc.la liboccvis.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libocc.0.dylib /opt/netgen/lib/libocc.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libocc.0.dylib libocc.dylib || { rm -f libocc.dylib && ln -s libocc.0.dylib libocc.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libocc.lai /opt/netgen/lib/libocc.la
+libtool: install: /usr/bin/install -c .libs/liboccvis.0.dylib /opt/netgen/lib/liboccvis.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f liboccvis.0.dylib liboccvis.dylib || { rm -f liboccvis.dylib && ln -s liboccvis.0.dylib liboccvis.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/liboccvis.lai /opt/netgen/lib/liboccvis.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in stlgeom
+test -z "/opt/netgen/lib" || ../.././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libstl.la libstlvis.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libstl.0.dylib /opt/netgen/lib/libstl.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libstl.0.dylib libstl.dylib || { rm -f libstl.dylib && ln -s libstl.0.dylib libstl.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libstl.lai /opt/netgen/lib/libstl.la
+libtool: install: /usr/bin/install -c .libs/libstlvis.0.dylib /opt/netgen/lib/libstlvis.0.dylib
+libtool: install: (cd /opt/netgen/lib && { ln -s -f libstlvis.0.dylib libstlvis.dylib || { rm -f libstlvis.dylib && ln -s libstlvis.0.dylib libstlvis.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libstlvis.lai /opt/netgen/lib/libstlvis.la
+make[3]: Nothing to be done for `install-data-am'.
+Making install in visualization
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/opt/netgen/include" || ../.././install-sh -c -d "/opt/netgen/include"
+ /usr/bin/install -c -m 644 soldata.hpp '/opt/netgen/include'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in ng
+test -z "/opt/netgen/bin" || .././install-sh -c -d "/opt/netgen/bin"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c netgen '/opt/netgen/bin'
+libtool: install: /usr/bin/install -c .libs/netgen /opt/netgen/bin/netgen
+test -z "/opt/netgen/bin" || .././install-sh -c -d "/opt/netgen/bin"
+ /usr/bin/install -c dialog.tcl menustat.tcl ngicon.tcl ng.tcl ngvisual.tcl sockets.tcl drawing.tcl nghelp.tcl ngshell.tcl ngtesting.tcl parameters.tcl variables.tcl csgeom.tcl stlgeom.tcl occgeom.tcl acisgeom.tcl netgen.ocf '/opt/netgen/bin'
+test -z "/opt/netgen/include" || .././install-sh -c -d "/opt/netgen/include"
+Making install in tutorials
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/opt/netgen/share/netgen" || .././install-sh -c -d "/opt/netgen/share/netgen"
+ /usr/bin/install -c -m 644 boxcyl.geo circle_on_cube.geo cone.geo cube.geo cubeandring.geo cubeandspheres.geo cubemcyl.geo cubemsphere.geo cylinder.geo cylsphere.geo ellipsoid.geo ellipticcyl.geo extrusion.geo fichera.geo lshape3d.geo manyholes.geo manyholes2.geo matrix.geo ortho.geo period.geo revolution.geo sculpture.geo shaft.geo shell.geo sphere.geo sphereincube.geo torus.geo trafo.geo twobricks.geo twocubes.geo twocyl.geo boundarycondition.geo hinge.stl part1.stl frame.step screw.step squarehole.in2d squarecircle.in2d square.in2d '/opt/netgen/share/netgen'
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/opt/netgen/share/doc/netgen" || .././install-sh -c -d "/opt/netgen/share/doc/netgen"
+ /usr/bin/install -c -m 644 ng4.pdf '/opt/netgen/share/doc/netgen'
+Making install in windows
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in nglib
+test -z "/opt/netgen/lib" || .././install-sh -c -d "/opt/netgen/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnglib.la '/opt/netgen/lib'
+libtool: install: /usr/bin/install -c .libs/libnglib.dylib /opt/netgen/lib/libnglib.dylib
+libtool: install: /usr/bin/install -c .libs/libnglib.lai /opt/netgen/lib/libnglib.la
+test -z "/opt/netgen/bin" || .././install-sh -c -d "/opt/netgen/bin"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c ng_vol ng_stl '/opt/netgen/bin'
+libtool: install: /usr/bin/install -c .libs/ng_vol /opt/netgen/bin/ng_vol
+libtool: install: /usr/bin/install -c .libs/ng_stl /opt/netgen/bin/ng_stl
+test -z "/opt/netgen/share/netgen" || .././install-sh -c -d "/opt/netgen/share/netgen"
+ /usr/bin/install -c -m 644 cube.surf '/opt/netgen/share/netgen'
+test -z "/opt/netgen/include" || .././install-sh -c -d "/opt/netgen/include"
+ /usr/bin/install -c -m 644 nglib.h '/opt/netgen/include'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.

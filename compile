@@ -1,0 +1,18 @@
+export CPPFLAGS="-I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/GL/ -I/opt/local/include/ -I/opt/local/include/oce/ -I/Users/jmverdun/git/oce/inc -I/Users/jmverdun/git/oce/src/TCollection -I/Users/jmverdun/git/oce/src/Standard -I/Users/jmverdun/git/oce/src/TopLoc -I/Users/jmverdun/git/oce/src/GeomAdaptor -I/Users/jmverdun/git/oce/src/BRep -I/Users/jmverdun/git/oce/src/Precision -I/Users/jmverdun/git/oce/src/TopExp -I/Users/jmverdun/git/oce/src/IntRes2d -I/Users/jmverdun/git/oce/src/Geom2dAdaptor -I/Users/jmverdun/git/oce/src/IntCurve -I/Users/jmverdun/git/oce/src/TopOpeBRep -I/Users/jmverdun/git/oce/src/TopOpeBRepDS -I/Users/jmverdun/git/oce/src/TopOpeBRepTool -I/Users/jmverdun/git/oce/src/Bnd -I/Users/jmverdun/git/oce/src/Geom2dAPI -I/Users/jmverdun/git/oce/src/Extrema -I/Users/jmverdun/git/oce/src/NCollection -I/Users/jmverdun/git/oce/src/IntPatch -I/Users/jmverdun/git/oce/src/GeomAPI -I/Users/jmverdun/git/oce/src/BRepAdaptor -I/Users/jmverdun/git/oce/src/BRepBuilderAPI -I/Users/jmverdun/git/oce/src/Poly -I/Users/jmverdun/git/oce/src/Interface -I/Users/jmverdun/git/oce/src/MoniTool -I/Users/jmverdun/git/oce/src/ShapeFix -I/Users/jmverdun/git/oce/src/ShapeAnalysis -I/Users/jmverdun/git/oce/src/TDF -I/Users/jmverdun/git/oce/src/CDF -I/Users/jmverdun/git/oce/src/BRepMesh -I/Users/jmverdun/git/oce/src/TDocStd -I/Users/jmverdun/git/oce/src/IGESControl -I/Users/jmverdun/git/oce/src/TopTools -I/Users/jmverdun/git/oce/src/GCPnts -I/Users/jmverdun/git/oce/src/BRepCheck -I/Users/jmverdun/git/oce/src/GC -I/Users/jmverdun/git/oce/src/BRepPrim -I/Users/jmverdun/git/oce/src/BRepBndLib -I/Users/jmverdun/git/oce/drv/BRepBndLib -I/Users/jmverdun/git/oce/drv/ShapeFix -I/Users/jmverdun/git/oce/src/Adaptor3d -I/Users/jmverdun/git/oce/src/Message -I/Users/jmverdun/git/oce/src/Adaptor2d -I/Users/jmverdun/git/oce/src/StlAPI -I/Users/jmverdun/git/oce/drv/StlAPI -I/Users/jmverdun/git/oce/src/StlMesh -I/usr/local/include/oce"
+./configure --with-tcl=/opt/local/lib --with-tk=/opt/local/lib  --enable-occ --with-tclinclude=/opt/local/include
+ ./configure --with-tcl=/opt/local/lib --with-tk=/opt/local/lib  --enable-occ --with-tclinclude=/opt/local/include --enable-shared --enable-nglib CXXFLAGS="-DNGLIB_EXPORTS"
+
+
+o Netgen
+Modify the following files:
+* libsrc/meshing/improve2.hpp
+  Add  DLL_HEADER to class MeshOptimize2d
+* libsrc/meshing/meshclass.hpp
+  Add  DLL_HEADER to CalcSurfacesOfNode
+* libsrc/meshing/meshtype.hpp
+  Add  DLL_HEADER to classes SurfaceElementIndex, MeshPoint, Element2d (int anp), 
+* libsrc/occ/occgeom.hpp
+  Add  DLL_HEADER to classes Line, OCCGeometry, OCCParameters, OCCGenerateMesh
+* libsrc/occ/occmeshsurf.hpp
+  Add  DLL_HEADER to classes OCCSurface, Meshing2OCCSurfaces, MeshOptimize2dOCCSurfaces, OCCRefinementSurfaces
+  
