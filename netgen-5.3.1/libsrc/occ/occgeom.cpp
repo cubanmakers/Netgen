@@ -15,7 +15,7 @@
 #include "ShapeFix.hxx"
 #include "ShapeFix_Edge.hxx"
 #include "ShapeFix_FixSmallFace.hxx"
-#include "StlTransfer.hxx"
+//#include "StlTransfer.hxx"
 #include "TopoDS_Iterator.hxx"
 #include "Partition_Spliter.hxx"
 
@@ -121,7 +121,7 @@ namespace netgen
          {
             TopoDS_Edge edge = TopoDS::Edge(exp1.Current());
             if ( BRep_Tool::Degenerated(edge) )
-               rebuild->Remove(edge, false);
+               rebuild->Remove(edge);
          }
          shape = rebuild->Apply(shape);
       }
@@ -190,7 +190,7 @@ namespace netgen
                   cout << "(natural bounds added)" <<endl;
                TopoDS_Face newface = sff->Face();
 
-               rebuild->Replace(face, newface, Standard_False);
+               rebuild->Replace(face, newface);
             }
 
             // Set the original colour of the face to the newly created 
@@ -209,7 +209,7 @@ namespace netgen
          {
             TopoDS_Edge edge = TopoDS::Edge(exp1.Current());
             if ( BRep_Tool::Degenerated(edge) )
-               rebuild->Remove(edge, false);
+               rebuild->Remove(edge);
          }
          shape = rebuild->Apply(shape);
       }
@@ -273,7 +273,7 @@ namespace netgen
                if(replace)
                {
                   TopoDS_Wire newwire = sfw->Wire();
-                  rebuild->Replace(oldwire, newwire, Standard_False);
+                  rebuild->Replace(oldwire, newwire);
                }
 
                //delete sfw; sfw = NULL;
@@ -303,7 +303,7 @@ namespace netgen
                      cout << "removing degenerated edge " << emap.FindIndex(edge)
                         << " from vertex " << vmap.FindIndex(TopExp::FirstVertex (edge))
                         << " to vertex " << vmap.FindIndex(TopExp::LastVertex (edge)) << endl;
-                     rebuild->Remove(edge, false);
+                     rebuild->Remove(edge);
                   }
                }
             }
@@ -321,7 +321,7 @@ namespace netgen
             {
                TopoDS_Edge edge = TopoDS::Edge(exp1.Current());
                if ( BRep_Tool::Degenerated(edge) )
-                  rebuild->Remove(edge, false);
+                  rebuild->Remove(edge);
             }
             shape = rebuild->Apply(shape);
          }
@@ -447,7 +447,7 @@ namespace netgen
          {
             TopoDS_Edge edge = TopoDS::Edge(exp1.Current());
             if ( BRep_Tool::Degenerated(edge) )
-               rebuild->Remove(edge, false);
+               rebuild->Remove(edge);
          }
          shape = rebuild->Apply(shape);
       }
@@ -488,7 +488,7 @@ namespace netgen
                   BRepLib::OrientClosedSolid (newsolid);
                   Handle_ShapeBuild_ReShape rebuild = new ShapeBuild_ReShape;
                   //		  rebuild->Apply(shape);
-                  rebuild->Replace(solid, newsolid, Standard_False);
+                  rebuild->Replace(solid, newsolid);
                   TopoDS_Shape newshape = rebuild->Apply(shape, TopAbs_COMPSOLID);//, 1);
                   //		  TopoDS_Shape newshape = rebuild->Apply(shape);
                   shape = newshape;
@@ -910,7 +910,7 @@ namespace netgen
             TopoDS_Solid newsolid = solid;
             BRepLib::OrientClosedSolid (newsolid);
             Handle_ShapeBuild_ReShape rebuild = new ShapeBuild_ReShape;
-            rebuild->Replace(solid, newsolid, Standard_False);
+            rebuild->Replace(solid, newsolid);
 
             TopoDS_Shape newshape = rebuild->Apply(shape, TopAbs_SHAPE, 1);
             shape = newshape;
